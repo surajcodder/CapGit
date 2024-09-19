@@ -1,4 +1,27 @@
-# GET http://localhost:39775/odata/v4/product/printHelloWorld(input='World')
+# GET http://localhost:4004/odata/v4/product/printHelloWorld(input='World')
+
+# GET http://localhost:4004/odata/v4/product/addition(num1=10, num2=5)
 
 
-GET http://localhost:4004/odata/v4/product/addition(num1=10, num2=5)
+# GET http://localhost:36909/odata/v4/product/myFunction(Catagory=1)
+# POST  http://localhost:45743/odata/v4/productshop/product
+# Content-Type: application/json
+# {
+#     "emission": 41900,
+#             "rating": "A",
+#             "ID": 2,
+#             "name": "AUDI",
+#             "stock": 42,
+#             "price": 3300
+# }
+POST http://localhost:40149/odata/v4/productshop/product
+header name: header value
+Content-Type: application/json
+        {
+            "emission": 37500,
+            "rating": "A+",
+            "ID": 2,
+            "name": "AUDI",
+            "stock": 31,
+            "price": 4200
+        }
